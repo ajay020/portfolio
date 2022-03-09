@@ -1,6 +1,6 @@
 import img from "../images/1.jpg";
 
-const Project = ({ image, title }) => {
+const Project = ({ image, title, webLink }) => {
   return (
     <>
       <div className="m-2 text-center card">
@@ -8,9 +8,9 @@ const Project = ({ image, title }) => {
           <p className="fw-bold card-title  text-white">{title}</p>
         </div>
         <div className="card-body bg-success p-0">
-          <a href="#" className="d-block">
+          <a href={webLink} className="d-block">
             <img
-              src={image ? image : img}
+              src={image}
               className="img-fluid img-thumbnail"
               style={{ width: "320px", height: "320px" }}
               alt=""
