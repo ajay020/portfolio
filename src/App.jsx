@@ -3,7 +3,7 @@ import ProjectList from "./components/ProjectList";
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="container bg-light-gray">
       <Header />
       <ProjectList />
     </div>

@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #082032;
+  --secondary-color: #2c394b;
+  --light-color: #334756;
+  --light-orange: #ff4c29;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+  background-color: var(--secondary-color);
+}
+.bg-lighter-gray {
+  background-color: var(--light-color);
+}

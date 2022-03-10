@@ -30,19 +30,18 @@ const porjects = [
   {
     title: "Todo App",
     image: todo,
-    webLink: "https://ajay020.github.io/calculator",
+    webLink: "https://ajay020.github.io/calculator-app",
   },
 ];
 
 const ProjectList = () => {
   return (
     <div className="container">
-      <h3 className="text-center my-4">My projects</h3>
+      <h3 className="text-center text-white my-4">Projects</h3>
       <section
         className="
         container
         d-flex 
-        bg-secondary
         justify-content-center
         flex-wrap"
       >

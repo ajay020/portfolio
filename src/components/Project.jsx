@@ -4,14 +4,14 @@ const Project = ({ image, title, webLink }) => {
   return (
     <>
       <div className="m-2 text-center card">
-        <div className="card-header m-0 p-0v bg-primary">
+        <div className="card-header m-0 p-0v bg-lighter-gray">
           <p className="fw-bold card-title  text-white">{title}</p>
         </div>
         <div className="card-body bg-success p-0">
-          <a href={webLink} className="d-block">
+          <a href={webLink} className="d-block" target="_blank">
             <img
               src={image}
-              className="img-fluid img-thumbnail"
+              className="img-fluid"
               style={{ width: "320px", height: "320px" }}
               alt=""
             />
