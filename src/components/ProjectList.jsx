@@ -1,43 +1,16 @@
 import Project from "./Project";
-
-import calculator from "../images/calculator.png";
-import todo from "../images/todo.png";
-import blog from "../images/blog.png";
-import moodtracker from "../images/moodtracker.png";
-import ecommarce from "../images/ecommarce.png";
-
-const porjects = [
-  {
-    title: "Blog App",
-    image: blog,
-    webLink: "https://blogappajay.herokuapp.com/",
-  },
-  {
-    title: "Moodtracker App",
-    image: moodtracker,
-    webLink: "#",
-  },
-  {
-    title: "Calculator App",
-    image: calculator,
-    webLink: "#",
-  },
-  {
-    title: "Ecommarce Store",
-    image: ecommarce,
-    webLink: "https://ecommarce-store-ajay.netlify.app/",
-  },
-  {
-    title: "Todo App",
-    image: todo,
-    webLink: "https://ajay020.github.io/calculator-app",
-  },
-];
+import { FaGithub } from "react-icons/fa";
+import { porjects } from "./../data";
 
 const ProjectList = () => {
   return (
     <div className="container">
-      <h3 className="text-center text-white my-4">Projects</h3>
+      <h3 className="text-center text-white my-4">
+        <a href="https://github.com/ajay020?tab=repositories" target="_blank">
+          {" "}
+          Projects <FaGithub />
+        </a>
+      </h3>
       <section
         className="
         container

@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--primary-color);
+  color: white;
 }
 
 .bg-light-gray {
@@ -16,4 +17,17 @@ body {
 }
 .bg-lighter-gray {
   background-color: var(--light-color);
+}
+
+a {
+  /* text-decoration: none; */
+  color: unset;
+}
+a:hover {
+  color: var(--light-orange);
+}
+
+.project_card:hover {
+  border: 1px solid var(--light-orange);
+  color: var(--light-orange);
 }
