@@ -33,3 +33,7 @@ export const porjects = [
       webLink: "https://ajay020.github.io/todo-app",
     },
   ];
+
+  export const skills = [
+      "ReactJs", "Redux", "HTML", "CSS", "JavaScript", "NodeJs", "Express", "MongoDB"
+  ]
