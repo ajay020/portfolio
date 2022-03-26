@@ -1,5 +1,3 @@
-import img from "../images/1.jpg";
-
 const Project = ({ image, title, webLink }) => {
   return (
     <>
@@ -12,7 +10,10 @@ const Project = ({ image, title, webLink }) => {
             <img
               src={image}
               className="img-fluid"
-              style={{ width: "320px", height: "320px" }}
+              style={{
+                width: "320px",
+                height: "320px",
+              }}
               alt=""
             />
           </a>

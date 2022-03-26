@@ -1,15 +1,23 @@
 const Header = () => {
   return (
-    <header className="container-fluid p-2 m-auto">
-      <div className="card w-50 m-auto">
-        <div className="card-body text-white bg-lighter-gray">
+    <header
+      style={{ height: "100vh" }}
+      className="
+        container-fluid
+        p-0  m-0
+        d-flex
+        bg-light-gray
+        align-items-center 
+        justify-content-center 
+      "
+    >
+      <div className=" w-50 m-auto">
+        <div className="card-body text-white">
           <p className="fw-bold p-0 m-0">
-            <p className="fw-bold p-0 m-0"> Hi, My name is Ajay.</p>
-            <p className="fw-bold p-0 m-0"> I'm a web developer from </p>
-            <p className="fw-bold p-0 m-0">Dausa, Rajasthan.</p>
+            <h1 className="fw-bold p-0 m-0"> Hi, I'm Ajay Kumar Meena.</h1>
+            <p className="mt-3 mb-0"> I'm a web developer from </p>
+            <p className=" mt-0">Dausa, Rajasthan.</p>
           </p>
-          <span className="mt-2 d-block">Skills: </span>
-          <p>ReactJs, Redux, HTML, CSS, JavaScript, Nodejs, Express, MongoDB</p>
         </div>
       </div>
     </header>
