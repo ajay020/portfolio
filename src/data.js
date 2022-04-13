@@ -22,6 +22,7 @@ export const porjects = [
       webLink: "https://moodtracker-ajay.netlify.app/",
       description: `
                 In this app a user can track their mood and emotions.
+                Technologies used: Reactjs,Redux, HTML, CSS
         `
     },
   
@@ -30,7 +31,7 @@ export const porjects = [
       image: ecommarce,
       webLink: "https://625533d7d11dd71da617876f--e-commarce-store.netlify.app/",
       description: `
-                It's an e-store app. A user can select, filter, and add a products to cart. 
+                It's an e-store app. A user can select, filter, and add a product to the cart. 
                 I have used a fake API to populate products list. This API fetches product data
                 from web server.
                 Technologies used: Reactjs, HTML, CSS
