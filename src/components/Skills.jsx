@@ -2,7 +2,11 @@ import { skills } from "../data";
 
 const Skills = () => {
   return (
-    <div id="skills" className="container row" style={{ height: "50vh" }}>
+    <div
+      id="skills"
+      className="container row d-flex align-items-center"
+      style={{ height: "50vh" }}
+    >
       <div
         className="
             col-sm-6
@@ -11,6 +15,8 @@ const Skills = () => {
             align-content-center 
         "
       >
+        <h5 className="text-white">My Skills</h5>
+
         <div
           className="card p-4 
             bg-light-gray
@@ -31,7 +37,11 @@ const Skills = () => {
         </div>
       </div>
       <div className="col-sm-6 d-flex align-items-center justify-content-center ">
-        <h4 className="text-white">My Skills</h4>
+        <p className="text-white  p-2  ">
+          I'm open to Job opportunities where I can contribute, learn and grow.
+          If you have a good opportunity that matches my skills and experience
+          then you can contact me.
+        </p>
       </div>
     </div>
   );

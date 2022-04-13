@@ -1,25 +1,36 @@
+import { FaGithub } from "react-icons/fa";
+
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand navbar-dark bg-light-gray mx-5">
-      <div class="container">
-        <a class="navbar-brand" href="#navbarNav">
+    <nav className="navbar navbar-expand navbar-dark bg-light-gray mx-5">
+      <div className="container">
+        <a className="navbar-brand" href="#navbarNav">
           AJAY
         </a>
-        <div class="" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#header">
+        <div className="" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#header">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">
-                SKILLS
+            <li className="nav-item">
+              <a className="nav-link" href="#skills">
+                Skills
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">
-                PROJECTS
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://github.com/ajay020?tab=repositories"
+                target="_blank"
+              >
+                Github link <FaGithub />
               </a>
             </li>
           </ul>

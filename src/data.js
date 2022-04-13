@@ -20,7 +20,7 @@ export const porjects = [
     {
       title: "Ecommarce Store",
       image: ecommarce,
-      webLink: "https://ecommarce-store-ajay.netlify.app/",
+      webLink: "https://625533d7d11dd71da617876f--e-commarce-store.netlify.app/",
     },
     {
       title: "Calculator App",
