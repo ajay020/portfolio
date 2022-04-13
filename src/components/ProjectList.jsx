@@ -18,8 +18,14 @@ const ProjectList = () => {
         justify-content-center
         flex-wrap"
       >
-        {porjects.map(({ title, image, webLink }) => (
-          <Project2 key={title} title={title} image={image} webLink={webLink} />
+        {porjects.map(({ title, image, webLink, description }) => (
+          <Project2
+            key={title}
+            title={title}
+            image={image}
+            webLink={webLink}
+            description={description}
+          />
         ))}
       </section>
     </div>
