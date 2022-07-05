@@ -4,6 +4,8 @@ import todo from "./images/todo.png";
 import blog from "./images/blog.png";
 import moodtracker from "./images/moodtracker.png";
 import ecommarce from "./images/ecommarce.png";
+import expenseTracker from "./images/expense_tracker2.png";
+
 
 export const porjects = [
     {
@@ -16,6 +18,16 @@ export const porjects = [
                     Technologies used: Reactjs, Redux, HTML, CSS, Bootstrap, Express, Mongodb
                     `
     },
+    {
+        title: "Expense Tracker App",
+        image: expenseTracker,
+        webLink: "https://62c3fd5335671334f23fedf9--expense-tracker-ajay020.netlify.app/",
+        description:`
+                      In this app, you can track your daily expenses, and can analyze your expenses by 
+                      daily, monthly, or yearly basis.
+                      Technologies used: Reactjs, HTML, CSS.
+                      `
+      },
     {
       title: "Moodtracker App",
       image: moodtracker,
