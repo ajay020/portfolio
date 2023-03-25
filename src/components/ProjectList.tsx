@@ -13,6 +13,7 @@ export default function ProjectList() {
           src={p.imgSrc}
           title={p.title}
           description={p.description}
+          projectLink={p.projectLink}
         />
       ))}
     </div>
