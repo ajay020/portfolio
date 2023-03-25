@@ -6,7 +6,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.header__info}>
         <p>
-          Hi, my name is Ajay. <span>I am a web developer</span>
+          <span> Hi,</span> my name is Ajay. <span>I am a web developer</span>
           from Dausa, Rajasthan.
         </p>
       </div>

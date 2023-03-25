@@ -1,0 +1,118 @@
+.project {
+  width: 90%;
+  margin: 24px auto;
+}
+
+.project h3 {
+  text-align: center;
+  margin: 16px auto;
+  padding: 4px;
+  border-bottom: 1px solid var(--color_green_text);
+  width: 40%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper > .project_des {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  translate: -50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+  width: 380px;
+  background-color: var(--color_black);
+}
+
+.wrapper:hover > .project_des {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project img {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.project_des button {
+  border: none;
+  padding: 12px 8px;
+  cursor: pointer;
+  margin: 4px auto;
+  font-weight: bold;
+  font-size: medium;
+  background-color: var(--color_green_dark);
+  color: var(--color_green_text);
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 660px) {
+  .project {
+    width: 90%;
+    margin: 16px auto;
+  }
+
+  .wrapper > .project_des {
+    bottom: 30px;
+    width: 60%;
+    padding: 12px 12px;
+  }
+
+  .project_des > p {
+    font-size: large;
+    margin: 8px auto;
+  }
+
+  .project_des button {
+    padding: 10px 12px;
+    font-weight: normal;
+    margin: 24px 0 12xp 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 80%;
+    margin: 16px auto;
+  }
+  .project img {
+    object-fit: contain;
+    display: block;
+    width: 430px;
+    height: auto;
+    margin: auto;
+  }
+  .wrapper > .project_des {
+    bottom: 10px;
+    width: 80%;
+    padding: 4px 8px;
+  }
+
+  .project_des button {
+    padding: 10px 8px;
+    margin: 2px 0 2xp 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .project {
+    width: 70%;
+    margin: 16px auto;
+  }
+  .project img {
+    object-fit: contain;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: auto;
+  }
+}

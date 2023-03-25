@@ -1,0 +1,12 @@
+.project_list {
+  background-color: var(--color_black);
+  width: 90%;
+  margin: 8px auto;
+}
+
+.project_list h2 {
+  text-align: center;
+  margin: 10px auto;
+  font-size: xx-large;
+  padding: 18px 0;
+}

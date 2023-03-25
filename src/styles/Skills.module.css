@@ -1,0 +1,46 @@
+.skills {
+  background-color: var(--color_black);
+  padding: 8px 4px;
+  width: 90%;
+  height: 280px;
+  margin: 4px auto;
+}
+.skills h2 {
+  text-align: center;
+  margin: 16px auto;
+  color: var(--color_green_text);
+  padding: 4px;
+}
+
+.skills ul {
+  /* background-color: rgb(159, 170, 170); */
+  list-style-type: none;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 4px;
+}
+
+.skills ul li {
+  background-color: var(--color_green_dark);
+  color: var(--color_green_text);
+  padding: 12px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.skills ul li span {
+  margin-right: 8px;
+  font-size: medium;
+}
+
+@media screen and (min-width: 660px) {
+  .skills ul {
+    width: 50%;
+    margin: auto;
+  }
+}
