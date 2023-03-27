@@ -1,7 +1,7 @@
 .project_list {
   background-color: var(--color_black);
   width: 90%;
-  margin: 8px auto;
+  margin: 0px auto;
 }
 
 .project_list h2 {

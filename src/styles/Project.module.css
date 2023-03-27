@@ -1,11 +1,11 @@
 .project {
   width: 90%;
-  margin: 24px auto;
+  margin: 18px auto;
 }
 
 .project h3 {
   text-align: center;
-  margin: 16px auto;
+  margin: 24px auto;
   padding: 4px;
   border-bottom: 1px solid var(--color_green_text);
   width: 40%;

@@ -13,7 +13,7 @@ export default function Header() {
       <div className={styles.header__divider}></div>
       <div className={styles.header__pic}>
         <Image
-          src={"/profile.png"}
+          src={"/profile.jpg"}
           width={120}
           height={120}
           alt="profile pic"

@@ -3,7 +3,7 @@
   padding: 8px 4px;
   width: 90%;
   height: 280px;
-  margin: 4px auto;
+  margin: 8px auto;
 }
 .skills h2 {
   text-align: center;
@@ -13,7 +13,6 @@
 }
 
 .skills ul {
-  /* background-color: rgb(159, 170, 170); */
   list-style-type: none;
   width: 90%;
   margin: auto;
