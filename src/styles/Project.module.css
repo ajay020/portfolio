@@ -1,6 +1,6 @@
 .project {
   width: 90%;
-  margin: 18px auto;
+  margin: 20px auto;
 }
 
 .project h3 {
@@ -28,7 +28,7 @@
   background-color: var(--color_black);
 }
 
-.image:hover + .project_des {
+.wrapper:hover > .project_des {
   visibility: visible;
   opacity: 1;
 }
@@ -58,7 +58,7 @@
 @media screen and (min-width: 660px) {
   .project {
     width: 90%;
-    margin: 16px auto;
+    margin: 18px auto;
   }
 
   .wrapper > .project_des {
@@ -92,7 +92,7 @@
     margin: auto;
   }
   .wrapper > .project_des {
-    bottom: 10px;
+    bottom: 0px;
     width: 80%;
     padding: 4px 8px;
   }

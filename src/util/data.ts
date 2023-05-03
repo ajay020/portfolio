@@ -29,7 +29,7 @@ export const projectData = [
     title: "Todo",
     imgSrc: "todo.png",
     projectLink: "https://todo-app-opal-seven.vercel.app/",
-    githubLink: "https://github.com/ajay020/expense-tracker",
+    githubLink: "https://github.com/ajay020/todo-app",
     description: `
     In this app, we can add a task, update and delete a task. 
     I have built this with Reactjs, HTML, and CSS.
@@ -44,8 +44,8 @@ export const projectData = [
     projectLink:
       "https://62c3fd5335671334f23fedf9--expense-tracker-ajay020.netlify.app/",
     description: `
-        In this app, we can calculate daily expenses.
-        For frontend, I used Reactjs, HTML, and CSS.
-    `,
+          In this app, we can calculate daily expenses.
+          For frontend, I used Reactjs, HTML, and CSS.
+      `,
   },
 ];
