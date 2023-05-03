@@ -21,7 +21,13 @@ export default function Project({
     <div className={styles.project}>
       <h3>{title}</h3>
       <div className={styles.wrapper}>
-        <Image src={`/${src}`} width={820} height={500} alt="picture" />
+        <Image
+          className={styles.image}
+          src={`/${src}`}
+          width={820}
+          height={500}
+          alt="picture"
+        />
         <div className={styles.project_des}>
           <p>{description}</p>
           <button>

@@ -11,6 +11,31 @@ export const projectData = [
             used Google auth provider and user credentials.
         `,
   },
+
+  {
+    id: "3",
+    title: "MoodTracker",
+    imgSrc: "moodtracker.png",
+    githubLink: "https://github.com/ajay020/mood-tracker",
+    projectLink: "https://mood-tracker-sage.vercel.app/",
+    description: `
+    In this app, we can log our daily mood, and we can analyze our emotions.  
+    I have built this app with Reactjs, HTML, and CSS.
+`,
+  },
+
+  {
+    id: "4",
+    title: "Todo",
+    imgSrc: "todo.png",
+    projectLink: "https://todo-app-opal-seven.vercel.app/",
+    githubLink: "https://github.com/ajay020/expense-tracker",
+    description: `
+    In this app, we can add a task, update and delete a task. 
+    I have built this with Reactjs, HTML, and CSS.
+`,
+  },
+
   {
     id: "2",
     title: "Expense Tracker",
@@ -23,40 +48,4 @@ export const projectData = [
         For frontend, I used Reactjs, HTML, and CSS.
     `,
   },
-
-  {
-    id: "4",
-    title: "Todo",
-    imgSrc: "todo.png",
-    projectLink: "https://github.com/ajay020/todo-app",
-    githubLink: "https://github.com/ajay020/expense-tracker",
-    description: `
-    In this app, we can add a task, update and delete a task. 
-    I have built this with Reactjs, HTML, and CSS.
-`,
-  },
-
-  {
-    id: "3",
-    title: "MoodTracker",
-    imgSrc: "moodtracker.png",
-    githubLink: "https://github.com/ajay020/mood-tracker",
-    projectLink: "https://moodtracker-ajay.netlify.app/",
-    description: `
-    In this app, we can log our daily mood, and we can analyze our emotions.  
-    I have built this app with Reactjs, HTML, and CSS.
-`,
-  },
-
-  //   {
-  //     id: "5",
-  //     title: "Calculator",
-  //     imgSrc: "calculator.png",
-  //     projectLink: "https://github.com/ajay020/calculator-app",
-  //     githubLink: "https://github.com/ajay020/expense-tracker",
-  //     description: `
-  //     This is a simple calculator.
-  //     I used Reactjs, HTML, and CSS.
-  // `,
-  //   },
 ];

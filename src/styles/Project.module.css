@@ -28,7 +28,7 @@
   background-color: var(--color_black);
 }
 
-.wrapper:hover > .project_des {
+.image:hover + .project_des {
   visibility: visible;
   opacity: 1;
 }
@@ -62,7 +62,7 @@
   }
 
   .wrapper > .project_des {
-    bottom: 30px;
+    bottom: 0px;
     width: 60%;
     padding: 12px 12px;
   }
