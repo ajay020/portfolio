@@ -12,7 +12,7 @@ import { faDatabase, faExpand } from "@fortawesome/free-solid-svg-icons";
 
 export default function Skills() {
   return (
-    <div className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       <h2>Skills</h2>
       <ul>
         <li>
@@ -68,6 +68,6 @@ export default function Skills() {
           />
         </li>
       </ul>
-    </div>
+    </section>
   );
 }

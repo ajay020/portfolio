@@ -1,5 +1,5 @@
 .project {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 }
 
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 660px) {
   .project {
-    width: 90%;
+    /* width: 100%; */
     margin: 18px auto;
   }
 
@@ -81,7 +81,7 @@
 
 @media (max-width: 600px) {
   .project {
-    width: 80%;
+    /* width: 80%; */
     margin: 16px auto;
   }
   .project img {
@@ -105,7 +105,7 @@
 
 @media (max-width: 400px) {
   .project {
-    width: 70%;
+    /* width: 70%; */
     margin: 16px auto;
   }
   .project img {

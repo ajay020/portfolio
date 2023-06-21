@@ -6,8 +6,8 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 12px auto;
+  width: 100%;
+  margin: 55px auto;
 }
 
 .header__divider {
@@ -38,8 +38,7 @@
   .header {
     padding: 1rem;
     display: flex;
-    width: 90%;
-    height: 320px;
+    height: 90vh;
     margin: 12px auto;
     flex-direction: row;
     justify-content: space-evenly;
@@ -54,8 +53,8 @@
     text-align: left;
     font-weight: 600;
     font-size: 32px;
-    line-height: 30px;
-    word-spacing: 6px;
+    line-height: 36px;
+    word-spacing: 8px;
   }
   .header__info > p > span:nth-child(1) {
     display: inline;

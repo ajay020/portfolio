@@ -3,7 +3,7 @@ import styles from "../styles/Header.module.css";
 
 export default function Header() {
   return (
-    <div className={styles.header}>
+    <section id="home" className={styles.header}>
       <div className={styles.header__info}>
         <p>
           <span> Hi,</span> my name is Ajay. <span>I am a web developer</span>
@@ -19,6 +19,6 @@ export default function Header() {
           alt="profile pic"
         />
       </div>
-    </div>
+    </section>
   );
 }
