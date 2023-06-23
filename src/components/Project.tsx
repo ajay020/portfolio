@@ -32,7 +32,6 @@ export default function Project({
           <p>{description}</p>
           <button>
             <Link href={projectLink} target="_blank">
-              {" "}
               Live Demo
             </Link>
           </button>
