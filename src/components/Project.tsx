@@ -24,12 +24,12 @@ export default function Project({
         <Image
           className={styles.image}
           src={`/${src}`}
-          width={820}
-          height={500}
+          width={500}
+          height={400}
           alt="picture"
         />
         <div className={styles.project_des}>
-          <p>{description}</p>
+          <p>Tech Stack: {description}</p>
           <button>
             <Link href={projectLink} target="_blank">
               Live Demo

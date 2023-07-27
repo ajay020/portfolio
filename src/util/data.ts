@@ -5,11 +5,7 @@ export const projectData = [
     imgSrc: "poem.png",
     projectLink: "https://rhyme-app.vercel.app/",
     githubLink: "https://github.com/ajay020/rhyme-nextjs-app",
-    description: `
-            Rhyme is an app for sharing poems. An authenticated user can write, update, and delete a poem. 
-            I've built this app with Nextjs, and Mongodb for storing poem data. For authentication, I have
-            used Google auth provider and user credentials.
-        `,
+    description: ` Nextjs, HTML, CSS,  Mongodb`,
   },
 
   {
@@ -18,10 +14,7 @@ export const projectData = [
     imgSrc: "moodtracker.png",
     githubLink: "https://github.com/ajay020/mood-tracker",
     projectLink: "https://mood-tracker-sage.vercel.app/",
-    description: `
-    In this app, we can log our daily mood, and we can analyze our emotions.  
-    I have built this app with Reactjs, HTML, and CSS.
-`,
+    description: `Reactjs, HTML, CSS`,
   },
 
   {
@@ -30,10 +23,7 @@ export const projectData = [
     imgSrc: "todo.png",
     projectLink: "https://todo-app-opal-seven.vercel.app/",
     githubLink: "https://github.com/ajay020/todo-app",
-    description: `
-    In this app, we can add a task, update and delete a task. 
-    I have built this with Reactjs, HTML, and CSS.
-`,
+    description: `Reactjs, HTML, CSS`,
   },
 
   {
@@ -43,9 +33,6 @@ export const projectData = [
     githubLink: "https://github.com/ajay020/expense-tracker",
     projectLink:
       "https://62c3fd5335671334f23fedf9--expense-tracker-ajay020.netlify.app/",
-    description: `
-          In this app, we can calculate daily expenses.
-          For frontend, I used Reactjs, HTML, and CSS.
-      `,
+    description: ` Reactjs, HTML, CSS.`,
   },
 ];
