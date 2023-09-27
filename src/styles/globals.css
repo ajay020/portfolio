@@ -8,9 +8,11 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   /* --color_black: #2c302c; */
   --color_black: #1f2937;
-  --color_green_light: #4e9f3d;
+  --color_dark_blue1: #01051e;
+  --color_dark_blue2: #1f2937;
+  --color_green_light: #146903;
   --color_green_dark: #1e5128;
-  --color_green_text: #d8e9a8;
+  --color_green_text: #acbff2;
 }
 
 * {

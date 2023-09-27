@@ -36,7 +36,15 @@ export default function Skills() {
           />
         </li>
         <li>
-          <span>ReactJs</span>
+          <span>React</span>
+          <FontAwesomeIcon
+            icon={faReact}
+            size="lg"
+            style={{ color: "#3cbff4" }}
+          />
+        </li>
+        <li>
+          <span>React Native</span>
           <FontAwesomeIcon
             icon={faReact}
             size="lg"

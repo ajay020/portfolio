@@ -1,0 +1,14 @@
+.carousel {
+  background-color: var(--color_black);
+  /* padding: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: var(--color_black);
+  width: 40px;
+  height: 60px;
+  font-size: x-large;
+}

@@ -1,36 +1,56 @@
 .header {
   background-color: var(--color_black);
-  color: var(--color_green_text);
+  background: linear-gradient(
+    90deg,
+    var(--color_dark_blue1),
+    var(--color_dark_blue2)
+  );
   padding: 1rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 55px auto 0 auto;
+  /* margin: 55px auto 0 auto; */
 }
 
-.header__divider {
-  width: 60%;
-  height: 1px;
-  margin: 16px 0;
-  background-color: var(--color_green_text);
+.header__info {
+  /* background-color: rgb(30, 62, 90); */
+  width: 50%;
+  height: 100%;
+  padding-top: 4rem;
 }
 
-.header__info p {
-  text-align: left;
-  font-weight: bold;
-  font-size: larger;
-  line-height: 22px;
-  word-spacing: 4px;
+.header__info h1 {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.header__info > p > span:nth-child(2) {
-  display: block;
+.header__info h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.textAnimation1 {
+  background: linear-gradient(90deg, #9df3d1, #81d0e8, #71bcf5);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.textAnimation2 {
+  background: linear-gradient(90deg, #c54eaa, #ab57b8, #8166cd, #457bec);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.header__pic {
+  background-image: image("../../public/banner.jpeg");
 }
 
 .header__pic img {
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
 }
 
@@ -38,27 +58,29 @@
   .header {
     padding: 1rem;
     display: flex;
-    height: 90vh;
-    margin: 2px auto;
+    height: 100vh;
+    /* margin: 2px auto; */
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: var(--color_black);
   }
-  .header__divider {
-    width: 1px;
-    height: 50%;
-    margin: 16px 0;
+
+  .header__info {
+    align-self: center;
+    /* background-color: #1d1d1d; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .header__info p {
-    text-align: left;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 36px;
-    word-spacing: 8px;
+
+  .header__info h1 {
+    font-size: 42px;
+    font-weight: 700;
   }
-  .header__info > p > span:nth-child(1) {
-    display: inline;
-    color: white;
-    font-size: 32px;
+
+  .header__info h2 {
+    font-size: 42px;
+    font-weight: 700;
   }
 }

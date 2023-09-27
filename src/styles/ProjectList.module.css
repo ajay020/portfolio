@@ -1,7 +1,7 @@
 .project_list {
   background-color: var(--color_black);
   width: 100%;
-  margin: 2px auto;
+  /* margin: 2px auto; */
   padding: 1rem 0.5rem;
 }
 

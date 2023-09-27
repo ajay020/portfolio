@@ -6,7 +6,7 @@ import { projectData } from "../util/data";
 export default function ProjectList() {
   return (
     <div className={styles.project_list}>
-      <h2>Projects</h2>
+      {/* <h2>Web Projects</h2> */}
       {projectData.map((p) => (
         <Project
           key={p.id}

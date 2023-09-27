@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Skills from "@/components/Skills";
 import ProjectList from "@/components/ProjectList";
 import Navbar from "@/components/Navbar";
+import ProjectTabs from "@/components/ProjectTabs";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
         <Navbar />
         <Header />
         <Skills />
-        <ProjectList />
+        <ProjectTabs />
+        {/* <ProjectList /> */}
       </main>
     </>
   );

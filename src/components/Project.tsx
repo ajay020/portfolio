@@ -19,13 +19,14 @@ export default function Project({
 }: Props) {
   return (
     <section id="projects" className={styles.project}>
-      <h3>{title}</h3>
+      <h3 className="my-4 m-4">{title}</h3>
       <div className={styles.wrapper}>
         <Image
-          className={styles.image}
+          className=" w-full h-auto"
           src={`/${src}`}
-          width={500}
-          height={400}
+          width={0}
+          height={0}
+          sizes="100vw"
           alt="picture"
         />
         <div className={styles.project_des}>

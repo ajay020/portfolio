@@ -1,0 +1,18 @@
+.container {
+  background-color: var(--color_black);
+  /* margin-top: 12px; */
+  /* margin-bottom: 12px; */
+  margin: 12px auto;
+}
+
+.container h3 {
+  color: var(--color_green);
+}
+
+@media (minwidth: 400px) {
+  .container {
+    background-color: brown;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}

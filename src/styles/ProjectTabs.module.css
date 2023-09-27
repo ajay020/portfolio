@@ -1,0 +1,13 @@
+.tab_container {
+  background-color: var(--color_dark_blue2);
+  padding: 12;
+  /* margin: 2px auto; */
+}
+
+.tabBtn {
+  background-color: var(color_dark_blue1);
+  /* border-top-left-radius: 16px; */
+  /* border-bottom-right-radius: 16px; */
+  padding: 10px;
+  margin-right: 50px;
+}
