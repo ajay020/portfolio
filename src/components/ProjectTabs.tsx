@@ -12,11 +12,11 @@ function ProjectTabs() {
   };
 
   return (
-    <div className="">
+    <section id="projects" className={styles.projectTab}>
+      <h2>Projects</h2>
       <div
         className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
       >
-        {/* Add a flex container */}
         <button
           className={` focus:outline-none ${
             activeTab === "WebProject"
@@ -51,7 +51,7 @@ function ProjectTabs() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

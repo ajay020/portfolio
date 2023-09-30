@@ -1,6 +1,21 @@
+.projectTab {
+  width: 100%;
+  background-color: var(--color_dark_blue2);
+
+  /* border: 2px solid white; */
+}
+
+.projectTab h2 {
+  text-align: center;
+  padding: 12px;
+  background-color: var(--color_dark_blue2);
+}
+
 .tab_container {
   background-color: var(--color_dark_blue2);
-  padding: 12;
+  padding-top: 20px;
+  /* background-color: red; */
+
   /* margin: 2px auto; */
 }
 

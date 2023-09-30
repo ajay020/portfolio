@@ -18,7 +18,7 @@ export default function Project({
   githubLink,
 }: Props) {
   return (
-    <section id="projects" className={styles.project}>
+    <section className={styles.project}>
       <h3 className="my-4 m-4">{title}</h3>
       <div className={styles.wrapper}>
         <Image
