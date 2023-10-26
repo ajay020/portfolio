@@ -3,6 +3,7 @@
   /* margin-top: 12px; */
   /* margin-bottom: 12px; */
   margin: 12px auto;
+  /* background-color: "green"; */
 }
 
 .container h3 {
@@ -11,7 +12,7 @@
 
 @media (minwidth: 400px) {
   .container {
-    background-color: brown;
+    /* background-color: brown; */
     margin-top: 12px;
     margin-bottom: 12px;
   }

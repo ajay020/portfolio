@@ -31,7 +31,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
         <Image
           key={index}
           src={`/${imageUrl}`}
-          width={170}
+          width={200}
           height={0}
           alt={`Slide ${index + 1}`}
         />
