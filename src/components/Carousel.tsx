@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { useSpring, animated, useScroll } from "react-spring";
 
 import styles from "../styles/carousel.module.css";
 
@@ -12,13 +13,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
   const imagesToShow = images.slice(currentIndex, currentIndex + 3);
 
   const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) =>
+      prevIndex < images.length - 1 ? prevIndex + 1 : images.length - 1
+    );
   };
 
   const goToPrevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
   };
 
   return (
@@ -26,16 +27,18 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
       <button onClick={goToPrevSlide} className={`${styles.btn}`}>
         &lt;
       </button>
-
-      {imagesToShow.map((imageUrl, index) => (
-        <Image
-          key={index}
-          src={`/${imageUrl}`}
-          width={200}
-          height={0}
-          alt={`Slide ${index + 1}`}
-        />
-      ))}
+      <div className={styles.slideContainer}>
+        {imagesToShow.map((imageUrl, index) => (
+          <div key={index}>
+            <Image
+              src={`/${imageUrl}`}
+              width={200}
+              height={0}
+              alt={`image ${index + 1}`}
+            />
+          </div>
+        ))}
+      </div>
 
       <button onClick={goToNextSlide} className={`${styles.btn}`}>
         &gt;

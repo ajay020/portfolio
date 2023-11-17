@@ -9,6 +9,23 @@ export const nativeProjectData = [
   },
   {
     id: "2",
+    title: "Blog App",
+    images: [
+      "blogapp/1.png",
+      "blogapp/2.png",
+      "blogapp/3.png",
+      "blogapp/4.png",
+      "blogapp/5.png",
+      "blogapp/6.png",
+      "blogapp/7.png",
+      "blogapp/8.png",
+    ],
+    projectLink: "",
+    githubLink: "",
+    description: `React Native`,
+  },
+  {
+    id: "3",
     title: "Sudoku App",
     images: ["su1.png", "su2.png", "su3.png", "su4.png"],
     projectLink: "",
