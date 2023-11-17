@@ -17,6 +17,7 @@
 .slideContainer {
   display: flex;
   transition: transform 0.5s ease;
+  gap: 20;
 }
 
 .slide {

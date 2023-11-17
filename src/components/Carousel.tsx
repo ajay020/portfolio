@@ -29,14 +29,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
       </button>
       <div className={styles.slideContainer}>
         {imagesToShow.map((imageUrl, index) => (
-          <div key={index}>
-            <Image
-              src={`/${imageUrl}`}
-              width={200}
-              height={0}
-              alt={`image ${index + 1}`}
-            />
-          </div>
+          <Image
+            key={index}
+            src={`/${imageUrl}`}
+            width={180}
+            height={200}
+            alt={`image ${index + 1}`}
+          />
         ))}
       </div>
 
