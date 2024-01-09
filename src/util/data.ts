@@ -1,6 +1,14 @@
 export const projectData = [
   {
     id: "1",
+    title: "English Grammar Wiz",
+    imgSrc: "engwiz.png",
+    projectLink: "https://english-grammar-wiz.vercel.app/",
+    githubLink: "https://github.com/ajay020/grammar-wiz-web-app",
+    description: `React,TailwindCSS, TypeScript`,
+  },
+  {
+    id: "1",
     title: "Rhyme",
     imgSrc: "poem.png",
     projectLink: "https://rhyme-app.vercel.app/",
