@@ -5,7 +5,7 @@ import styles from "../styles/ProjectTabs.module.css";
 import { ReactNativeProjectList } from "./ReactNativeProjectList";
 
 function ProjectTabs() {
-  const [activeTab, setActiveTab] = useState("MobileProject");
+  const [activeTab, setActiveTab] = useState("WebProject");
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
@@ -18,17 +18,6 @@ function ProjectTabs() {
         className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
       >
         <button
-          className={`tabBtn focus:outline-none ${
-            activeTab === "MobileProject"
-              ? " border-b-4 border-blue-600 text-white"
-              : "text-gray-500"
-          }  ${styles.tabBtn}`}
-          onClick={() => handleTabChange("MobileProject")}
-        >
-          Mobile Project
-        </button>
-
-        <button
           className={` focus:outline-none ${
             activeTab === "WebProject"
               ? "  border-b-4 border-blue-600 text-white"
@@ -37,6 +26,17 @@ function ProjectTabs() {
           onClick={() => handleTabChange("WebProject")}
         >
           Web Project
+        </button>
+
+        <button
+          className={`tabBtn focus:outline-none ${
+            activeTab === "MobileProject"
+              ? " border-b-4 border-blue-600 text-white"
+              : "text-gray-500"
+          }  ${styles.tabBtn}`}
+          onClick={() => handleTabChange("MobileProject")}
+        >
+          Mobile Project
         </button>
       </div>
 

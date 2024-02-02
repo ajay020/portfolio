@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3,
@@ -7,75 +8,51 @@ import {
   faGit,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "../styles/Skills.module.css";
 import { faDatabase, faExpand } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/Skills.module.css";
 
-export default function Skills() {
+const Skills: React.FC = () => {
   return (
     <section id="skills" className={styles.skills}>
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <span>JavaScript</span>
-          <FontAwesomeIcon icon={faJs} size="lg" style={{ color: "#f2d518" }} />
-        </li>
-        <li>
-          <span>HTML</span>
-          <FontAwesomeIcon
-            icon={faHtml5}
-            size="lg"
-            style={{ color: "#f21f18" }}
-          />
-        </li>
-        <li>
-          <span>CSS</span>
-          <FontAwesomeIcon
-            icon={faCss3}
-            size="lg"
-            style={{ color: "#eef218" }}
-          />
-        </li>
-        <li>
-          <span>React</span>
-          <FontAwesomeIcon
-            icon={faReact}
-            size="lg"
-            style={{ color: "#3cbff4" }}
-          />
-        </li>
-        <li>
-          <span>React Native</span>
-          <FontAwesomeIcon
-            icon={faReact}
-            size="lg"
-            style={{ color: "#3cbff4" }}
-          />
-        </li>
-        <li>
-          <span>Nodejs</span>
-          <FontAwesomeIcon
-            icon={faNodeJs}
-            size="lg"
-            style={{ color: "#3cf451" }}
-          />
-        </li>
-        <li>
-          <span>Express</span>
-          <FontAwesomeIcon
-            icon={faExpand}
-            size="lg"
-            style={{ color: "#ab0606" }}
-          />
-        </li>
-        <li>
-          <span>MongoDB</span>
-          <FontAwesomeIcon
-            icon={faDatabase}
-            size="lg"
-            style={{ color: "#0ac620" }}
-          />
-        </li>
-      </ul>
+      <h2 className="text-3xl">Skills</h2>
+      <div className="flex  justify-center flex-col md:flex-row ">
+        <div>
+          <h3 className="text-center my-3">Frontend</h3>
+          <ul className={`${styles.skill_list}`}>
+            <SkillItem name="JavaScript" icon={faJs} color="#f2d518" />
+            <SkillItem name="HTML" icon={faHtml5} color="#f21f18" />
+            <SkillItem name="CSS" icon={faCss3} color="#eef218" />
+            <SkillItem name="React" icon={faReact} color="#3cbff4" />
+            <SkillItem name="React Native" icon={faReact} color="#3cbff4" />
+          </ul>
+        </div>
+        <div>
+          <h3 className="my-3 text-center">Backend</h3>
+          <ul className={`${styles.skill_list}`}>
+            <SkillItem name="JavaScript" icon={faJs} color="#f2d518" />
+            <SkillItem name="Node.js" icon={faNodeJs} color="#3cf451" />
+            <SkillItem name="Express" icon={faExpand} color="#ab0606" />
+            <SkillItem name="MongoDB" icon={faDatabase} color="#0ac620" />
+          </ul>
+        </div>
+      </div>
     </section>
   );
+};
+
+interface SkillItemProps {
+  name: string;
+  icon: any; // You might want to define a type for icon
+  color: string;
 }
+
+const SkillItem: React.FC<SkillItemProps> = ({ name, icon, color }) => {
+  return (
+    <li className={styles.skill_list_item}>
+      <span className="text-sm pr-2">{name}</span>
+      <FontAwesomeIcon icon={icon} size="lg" style={{ color }} />
+    </li>
+  );
+};
+
+export default Skills;
