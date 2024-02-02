@@ -47,6 +47,15 @@ const Navbar = () => {
                 ) : null}
               </li>
             ))}
+            <li>
+              <Link
+                target="blank"
+                href={"https://ajay020.hashnode.dev/"}
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                Blogs
+              </Link>
+            </li>
           </ul>
 
           <motion.button

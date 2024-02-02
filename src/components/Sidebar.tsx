@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 interface PropType {
   isOpen: boolean;
   toggleMenu: () => void;
 }
 
-const navItems = ["Home", "Skills", "Projects"];
+const navItems = ["Home", "Skills", "Projects", "Blog"];
 
 const Sidebar = ({ isOpen, toggleMenu }: PropType) => {
   return (
@@ -39,6 +40,13 @@ const Sidebar = ({ isOpen, toggleMenu }: PropType) => {
               <NavLink text={item} />
             </li>
           ))}
+          <Link
+            target="blank"
+            href={"https://ajay020.hashnode.dev/"}
+            className="text-white hover:text-gray-300 transition duration-300"
+          >
+            Blogs
+          </Link>
         </ul>
       </motion.div>
     </motion.div>
