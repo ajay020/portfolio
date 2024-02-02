@@ -13,7 +13,7 @@ export default function Header() {
 
         <div>
           <h2 className={`leading-normal ${styles.textAnimation2}`}>
-            Web and, <br /> Cross-plateform mobile app develper.
+            Full Stack Web Developer
           </h2>
         </div>
       </div>
