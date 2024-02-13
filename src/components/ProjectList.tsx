@@ -5,7 +5,12 @@ import { projectData } from "../util/data";
 
 export default function ProjectList() {
   return (
-    <div className={styles.project_list}>
+    <div
+      className={`flex 
+      flex-wrap  gap-4  sm:w-[500px]
+    justify-center
+      md:w-[900px] m-auto`}
+    >
       {/* <h2>Web Projects</h2> */}
       {projectData.map((p) => (
         <Project

@@ -1,15 +1,10 @@
 .project {
-  width: 100%;
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px auto;
-}
-
-.project h3 {
-  text-align: center;
-  padding: 4px;
-  border-bottom: 1px solid ver(--color_green);
+  border: 1px solid white;
 }
 
 .wrapper {
