@@ -22,7 +22,7 @@ const Navbar = () => {
      px-6 md:px-12 fixed top-0 w-full
       z-30 shadow-lg shadow-gray-500/50"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-evenly">
           <Link
             href="#home"
             scroll={false}

@@ -16,7 +16,7 @@ function ProjectTabs() {
       <h2 className="text-3xl font-bold mb-2">Projects</h2>
       <ProjectList />
 
-      <div
+      {/* <div
         className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
       >
         <button
@@ -40,7 +40,7 @@ function ProjectTabs() {
         >
           Mobile Project
         </button>
-      </div>
+      </div> */}
       {/* 
       <div className="tab-content">
         {activeTab === "WebProject" && (

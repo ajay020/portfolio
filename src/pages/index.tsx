@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Skills from "@/components/Skills";
 import Navbar from "@/components/Navbar";
 import ProjectTabs from "@/components/ProjectTabs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Header />
         <Skills />
         <ProjectTabs />
+        <Footer />
       </main>
     </>
   );

@@ -9,7 +9,7 @@ export default function ProjectList() {
       className={`flex 
       flex-wrap  gap-4  sm:w-[500px]
     justify-center
-      md:w-[900px] m-auto`}
+      md:w-[900px] m-auto pb-8`}
     >
       {/* <h2>Web Projects</h2> */}
       {projectData.map((p) => (
