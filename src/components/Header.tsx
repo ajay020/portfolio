@@ -1,5 +1,13 @@
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
+import {
+  faGithub,
+  faGithubSquare,
+  faHackerrank,
+  faHashnode,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -13,8 +21,22 @@ export default function Header() {
 
         <div>
           <h2 className={`leading-normal ${styles.textAnimation2}`}>
-            Full Stack Web Developer
+            technical writer and web developer.
           </h2>
+        </div>
+        <div className="mt-2 flex gap-3">
+          <Link href="https://github.com/ajay020" target="_blank">
+            <FontAwesomeIcon icon={faGithubSquare} size="lg" />
+          </Link>
+          <Link href="https://ajay020.hashnode.dev/" target="_blank">
+            <FontAwesomeIcon icon={faHashnode} size="lg" />
+          </Link>
+          <Link
+            href="https://www.hackerrank.com/profile/ajay020"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faHackerrank} size="lg" />
+          </Link>
         </div>
       </div>
       <div className={styles.header__pic}>

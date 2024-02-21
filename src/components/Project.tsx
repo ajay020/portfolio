@@ -18,16 +18,20 @@ export default function Project({
   githubLink,
 }: Props) {
   return (
-    <section className={`border w-[400px] rounded-md p-4`}>
+    <section
+      className={`border w-[400px] hover:border-blue-600 rounded-md p-4`}
+    >
       <div className=" rounded-md">
-        <Image
-          className="w-full rounded-md"
-          src={`/${src}`}
-          width={280}
-          height={400}
-          sizes="100vw"
-          alt="picture"
-        />
+        {src && (
+          <Image
+            className="w-full rounded-md"
+            src={`/${src}`}
+            width={280}
+            height={400}
+            sizes="100vw"
+            alt="picture"
+          />
+        )}
         <div className={styles.wrapper}>
           <h3 className="my-4 m-4 text-left">{title}</h3>
 

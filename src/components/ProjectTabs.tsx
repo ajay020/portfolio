@@ -13,7 +13,9 @@ function ProjectTabs() {
 
   return (
     <section id="projects" className={styles.projectTab}>
-      <h2>Projects</h2>
+      <h2 className="text-3xl font-bold mb-2">Projects</h2>
+      <ProjectList />
+
       <div
         className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
       >
@@ -39,7 +41,7 @@ function ProjectTabs() {
           Mobile Project
         </button>
       </div>
-
+      {/* 
       <div className="tab-content">
         {activeTab === "WebProject" && (
           <div>
@@ -51,7 +53,7 @@ function ProjectTabs() {
             <ReactNativeProjectList />
           </div>
         )}
-      </div>
+      </div> */}
     </section>
   );
 }
