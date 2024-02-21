@@ -8,6 +8,7 @@ type Props = {
   description: string;
   projectLink: string;
   githubLink: string;
+  about?: string;
 };
 
 export default function Project({
@@ -16,6 +17,7 @@ export default function Project({
   description,
   projectLink,
   githubLink,
+  about,
 }: Props) {
   return (
     <section
@@ -33,16 +35,18 @@ export default function Project({
           />
         )}
         <div className={styles.wrapper}>
-          <h3 className="my-4 m-4 text-left">{title}</h3>
-
-          <div className={styles.project_des}>
-            <p>Tech Stack: {description}</p>
-            <button>
-              <Link href={projectLink} target="_blank">
-                Live Demo
-              </Link>
+          <h3 className="my-2 text-lg font-bold text-left">{title}</h3>
+          <p className=" text-left my-2">{about}</p>
+          <p>{description}</p>
+          <div className="flex mt-2 gap-2">
+            <button className="text-blue-400  underline hover:text-blue-500">
+              {projectLink != "" && (
+                <Link href={projectLink} target="_blank">
+                  Live Demo
+                </Link>
+              )}
             </button>
-            <button>
+            <button className=" text-blue-400 underline hover:text-blue-500">
               <Link href={githubLink} target="_blank">
                 GitHub Link
               </Link>

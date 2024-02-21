@@ -20,6 +20,7 @@ export default function ProjectList() {
           description={p.description}
           projectLink={p.projectLink}
           githubLink={p.githubLink}
+          about={p.about}
         />
       ))}
     </div>
