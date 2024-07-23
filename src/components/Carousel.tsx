@@ -23,19 +23,22 @@ const Carousel: React.FC<CarouselProps> = ({ images }: CarouselProps) => {
   };
 
   return (
-    <div className={`${styles.carousel}  flex justify-around gap-3`}>
+    <div className={`${styles.carousel} border flex justify-around gap-4`}>
       <button onClick={goToPrevSlide} className={`${styles.btn}`}>
         &lt;
       </button>
-      <div className={styles.slideContainer}>
+
+      <div className={`flex gap-2`}>
         {imagesToShow.map((imageUrl, index) => (
-          <Image
-            key={index}
-            src={`/${imageUrl}`}
-            width={180}
-            height={200}
-            alt={`image ${index + 1}`}
-          />
+          <div className="p-4">
+            <Image
+              key={index}
+              src={`/${imageUrl}`}
+              width={120}
+              height={100}
+              alt={`image ${index + 1}`}
+            />
+          </div>
         ))}
       </div>
 

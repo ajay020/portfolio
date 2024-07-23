@@ -5,7 +5,7 @@ import styles from "../styles/ProjectTabs.module.css";
 import { ReactNativeProjectList } from "./ReactNativeProjectList";
 
 function ProjectTabs() {
-  const [activeTab, setActiveTab] = useState("WebProject");
+  const [activeTab, setActiveTab] = useState("MobileProject");
 
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
@@ -14,34 +14,28 @@ function ProjectTabs() {
   return (
     <section id="projects" className={styles.projectTab}>
       <h2 className="text-3xl font-bold mb-2">Projects</h2>
-      <ProjectList />
-
-      {/* <div
-        className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
+      <div className={`p-5  flex space-x-4 justify-center ${styles.tab_container}`}
       >
         <button
-          className={` focus:outline-none ${
-            activeTab === "WebProject"
-              ? "  border-b-4 border-blue-600 text-white"
-              : " text-gray-500"
-          }  ${styles.tabBtn}`}
+          className={` focus:outline-none ${activeTab === "WebProject"
+            ? "  border-b-4 border-blue-600 text-white"
+            : " text-gray-500"
+            }  ${styles.tabBtn}`}
           onClick={() => handleTabChange("WebProject")}
         >
           Web Project
         </button>
 
         <button
-          className={`tabBtn focus:outline-none ${
-            activeTab === "MobileProject"
-              ? " border-b-4 border-blue-600 text-white"
-              : "text-gray-500"
-          }  ${styles.tabBtn}`}
+          className={`tabBtn focus:outline-none ${activeTab === "MobileProject"
+            ? " border-b-4 border-blue-600 text-white"
+            : "text-gray-500"
+            }  ${styles.tabBtn}`}
           onClick={() => handleTabChange("MobileProject")}
         >
           Mobile Project
         </button>
-      </div> */}
-      {/* 
+      </div>
       <div className="tab-content">
         {activeTab === "WebProject" && (
           <div>
@@ -53,7 +47,7 @@ function ProjectTabs() {
             <ReactNativeProjectList />
           </div>
         )}
-      </div> */}
+      </div>
     </section>
   );
 }

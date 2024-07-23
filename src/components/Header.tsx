@@ -1,10 +1,10 @@
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 import {
-  faGithub,
   faGithubSquare,
   faHackerrank,
   faHashnode,
+
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function Header() {
 
         <div>
           <h2 className={`leading-normal ${styles.textAnimation2}`}>
-            technical writer and web developer.
+            technical writer and mobile developer.
           </h2>
         </div>
         <div className="mt-2 flex gap-3">
@@ -32,7 +32,7 @@ export default function Header() {
             <FontAwesomeIcon icon={faHashnode} size="lg" />
           </Link>
           <Link
-            href="https://www.hackerrank.com/profile/ajay020"
+            href="https://leetcode.com/u/ajay020/"
             target="_blank"
           >
             <FontAwesomeIcon icon={faHackerrank} size="lg" />

@@ -1,10 +1,10 @@
 .carousel {
   background-color: var(--color_black);
-  /* padding: 30px; */
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .btn {
@@ -17,7 +17,7 @@
 .slideContainer {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 20;
+  /* gap: 20; */
 }
 
 .slide {

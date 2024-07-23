@@ -10,6 +10,7 @@ type Project = {
   description: string;
   projectLink: string;
   githubLink: string;
+  about: string
 };
 
 type ProjectProps = {
@@ -18,8 +19,14 @@ type ProjectProps = {
 
 const NativeProject = ({ project }: ProjectProps) => {
   return (
-    <div className={`flex flex-col items-center ${styles.container}`}>
-      <h3 className="my-4 ">{project.title}</h3>
+    <div className={`flex flex-col ${styles.container}`}>
+      <div className="my-4 ">
+        <h3 className="text-lg fw-800">{project.title}</h3>
+        <p>Developed with: {project.description}</p>
+        <p>{project.about}</p>
+
+      </div>
+
       <Carousel images={project.images} />
     </div>
   );
