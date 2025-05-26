@@ -4,7 +4,7 @@ import {
   faGithubSquare,
   faHackerrank,
   faHashnode,
-
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function Header() {
 
         <div>
           <h2 className={`leading-normal ${styles.textAnimation2}`}>
-            technical writer and mobile developer.
+           Software Developer and Open Source Contributor.
           </h2>
         </div>
         <div className="mt-2 flex gap-3">
@@ -30,6 +30,12 @@ export default function Header() {
           </Link>
           <Link href="https://ajay020.hashnode.dev/" target="_blank">
             <FontAwesomeIcon icon={faHashnode} size="lg" />
+          </Link>
+          <Link
+            href="https://medium.com/@ajay_00"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faMedium} size="lg" />
           </Link>
           <Link
             href="https://leetcode.com/u/ajay020/"

@@ -1,7 +1,13 @@
 import React from "react";
 
+import {
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
 import Carousel from "./Carousel";
 import styles from "../styles/NativeProject.module.css";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type Project = {
   id: string;
@@ -19,9 +25,14 @@ type ProjectProps = {
 
 const NativeProject = ({ project }: ProjectProps) => {
   return (
-    <div className={`flex flex-col ${styles.container}`}>
+    <div className={`flex flex-col  border  p-4 ${styles.container}`}>
       <div className="my-4 ">
-        <h3 className="text-lg fw-800">{project.title}</h3>
+        <Link href={project.githubLink} className="flex items-center gap-2 text-blue-600 underline hover:text-blue-800 transition-colors">
+          <h3 className="text-lg fw-800">
+            {project.title}
+          </h3>
+          <FontAwesomeIcon icon={faGithub} size="lg" />
+        </Link>
         <p>Developed with: {project.description}</p>
         <p>{project.about}</p>
 

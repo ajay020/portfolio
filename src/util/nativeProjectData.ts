@@ -1,22 +1,5 @@
 export const nativeProjectData = [
   {
-    id: "4",
-    title: "Flashcard App",
-    images: [
-      "flashcard/1.png",
-      "flashcard/2.png",
-      "flashcard/3.png",
-      "flashcard/4.png",
-      "flashcard/5.png",
-      "flashcard/6.png",
-      "flashcard/7.png"
-    ],
-    projectLink: "",
-    githubLink: "https://github.com/ajay020/flashCardApp",
-    description: `Android (jetpack compose)`,
-    about: "Learn and memorize with flashcard app."
-  },
-  {
     id: "5",
     title: "Affimation App",
     images: [
@@ -33,6 +16,24 @@ export const nativeProjectData = [
     about: "Daily affirmations for positivity and well-being."
   },
 
+  {
+    id: "4",
+    title: "Flashcard App",
+    images: [
+      "flashcard/1.png",
+      "flashcard/2.png",
+      "flashcard/3.png",
+      "flashcard/4.png",
+      "flashcard/5.png",
+      "flashcard/6.png",
+      "flashcard/7.png"
+    ],
+    projectLink: "",
+    githubLink: "https://github.com/ajay020/flashCardApp",
+    description: `Android (jetpack compose)`,
+    about: "Learn and memorize with flashcard app."
+  },
+ 
   {
     id: "1",
     title: "English Quiz App",
@@ -58,7 +59,7 @@ export const nativeProjectData = [
     projectLink: "",
     githubLink: "",
     description: `React Native, Firestore`,
-    about: "A blog app. Users can share their thoughts."
+    about: "A blog app to share thoughts."
   },
   {
     id: "3",
