@@ -13,7 +13,7 @@ type Project = {
   id: string;
   title: string;
   images: string[];
-  description: string;
+  techStack: string;
   projectLink: string;
   githubLink: string;
   about: string
@@ -26,15 +26,15 @@ type ProjectProps = {
 const NativeProject = ({ project }: ProjectProps) => {
   return (
     <div className={`flex flex-col  border  p-4 ${styles.container}`}>
-      <div className="my-4 ">
+      <div className="my-4 flex flex-col gap-2">
         <Link href={project.githubLink} className="flex items-center gap-2 text-blue-600 underline hover:text-blue-800 transition-colors">
           <h3 className="text-lg fw-800">
             {project.title}
           </h3>
           <FontAwesomeIcon icon={faGithub} size="lg" />
         </Link>
-        <p>Developed with: {project.description}</p>
         <p>{project.about}</p>
+        <p> <span className={"font-bold"}>Tech Stack:</span> {project.techStack}</p>
 
       </div>
 

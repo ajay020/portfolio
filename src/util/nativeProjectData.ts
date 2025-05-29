@@ -1,19 +1,50 @@
 export const nativeProjectData = [
-  {
-    id: "5",
-    title: "Affimation App",
-    images: [
-      "affirmation/1.jpg",
-      "affirmation/2.jpg",
-      "affirmation/3.jpg",
-      "affirmation/4.jpg",
-      "affirmation/5.jpg",
-      "affirmation/6.jpg",
+   {
+    id: "1",
+    title: "Flip & Match",
+     images: [
+      "flip/1.png",
+      "flip/2.png",
+      "flip/3.png",
+      "flip/4.png",
+      "flip/5.png",
+      "flip/6.png",
     ],
     projectLink: "",
-    githubLink: "https://github.com/ajay020/affirmation-app",
-    description: `Android (jetpack compose)`,
-    about: "Daily affirmations for positivity and well-being."
+    githubLink: "https://github.com/ajay020/flip-and-match",
+    about: "A fun memory game to flip and match cards.",
+    techStack: "Android (jetpack compose), Kotlin, MVVM, LiveData, ViewModel, Room Database"
+  },
+  {
+    id: "2",
+    title: "QuizziBee",
+    images: [
+      "bee/1.png",
+      "bee/2.png",
+      "bee/3.png",
+      "bee/4.png",
+      "bee/5.png",
+      "bee/6.png",
+    ],
+    projectLink: "",
+    githubLink: "https://github.com/ajay020/Quizzy-bee-app",
+    about: " An English quiz app to test your knowledge with fun quizzes.",
+    techStack: "Android (xml layout), Kotlin, MVVM, LiveData, ViewModel, Room Database"
+  },
+   {
+    id: "3",
+    title: "Music Player",
+    images: [
+      "music/1.png",
+      "music/2.png",
+      "music/3.png",
+      "music/4.png",
+      "music/5.png",
+    ],
+    projectLink: "",
+    githubLink: "https://github.com/ajay020/music-player",
+    about: "A simple music player app to play your favorite songs.",
+    techStack: "Android (xml layout), Kotlin, MVVM, LiveData, ViewModel, RecyclerView, Room Database"
   },
 
   {
@@ -30,21 +61,21 @@ export const nativeProjectData = [
     ],
     projectLink: "",
     githubLink: "https://github.com/ajay020/flashCardApp",
-    description: `Android (jetpack compose)`,
+    techStack: `Android (jetpack compose) Kotlin, MVVM, Flow, ViewModel, Room Database`,
     about: "Learn and memorize with flashcard app."
   },
  
   {
-    id: "1",
+    id: "5",
     title: "English Quiz App",
     images: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"],
     projectLink: "",
     githubLink: "",
-    description: `React Native`,
+    techStack: `React Native, Expo, Typescript, Redux`,
     about: "Learn English grammar with quizzes"
   },
   {
-    id: "2",
+    id: "6",
     title: "Blog App",
     images: [
       "blogapp/1.png",
@@ -58,16 +89,16 @@ export const nativeProjectData = [
     ],
     projectLink: "",
     githubLink: "",
-    description: `React Native, Firestore`,
-    about: "A blog app to share thoughts."
+    techStack: `React Native, Firestore, Expo, Typescript, Redux`,
+    about: " A blogging app to write and read blogs. It has features like creating, editing, deleting and reading blogs.",
   },
   {
-    id: "3",
+    id: "7",
     title: "Sudoku App",
     images: ["su1.png", "su2.png", "su3.png", "su4.png"],
     projectLink: "",
     githubLink: "",
-    description: `React Native`,
+    techStack: `React Native, Expo, Typescript`,
     about: "Solve sudoku puzzles and give your brain some challanges."
   },
 ];
