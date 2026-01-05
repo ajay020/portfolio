@@ -55,6 +55,5 @@ export const projectData = [
       "https://62c3fd5335671334f23fedf9--expense-tracker-ajay020.netlify.app/",
     description: ` Reactjs, HTML, CSS.`,
     about: "Keep Track your expense.",
-
   },
 ];

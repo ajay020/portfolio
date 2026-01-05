@@ -8,44 +8,58 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
     {
-        title: "Recipe App",
+        title: "Local Library",
         description:
-            "A recipe browsing app using MealDB API with search and category filtering.",
-        tech: ["React Native", "Expo", "TypeScript"],
-        liveUrl: "#",
-        githubUrl: "#",
+            "A Library catalog application.",
+        tech: ["React", "Express", "MongoDB"],
+        githubUrl: "https://github.com/ajay020/local-library",
+    },
+    {
+        title: "MoodTracker",
+        description: "Keep Track your mood and emotions.",
+        tech: ["React", "HTML", "CSS"],
+        liveUrl: "https://mood-tracker-sage.vercel.app/",
+        githubUrl: "https://github.com/ajay020/mood-tracker",
+    },
+    {
+        title: "English Grammar Docs",
+        description: "Platform for English grammar learners.",
+        tech: ["React", "Tailwind CSS", "TypeScript"],
+        githubUrl: "https://github.com/ajay020/grammar-wiz-web-app",
+        liveUrl: "https://english-grammar-wiz.vercel.app/",
     },
     {
         title: "English Quiz App",
-        description:
-            "Quiz app for beginner to intermediate learners with level-based progression.",
-        tech: ["Android", "Kotlin", "MVVM"],
-        githubUrl: "#",
+        description: "Learn English grammar with quizzes",
+        tech: ["React naive", "Expo", "Typescript", "Redux"],
+        githubUrl: "https://github.com/ajay020/Grammar-Wiz",
     },
-    {
-        title: "Expense Tracker",
-        description:
-            "A personal expense tracking app with income and expense management.",
-        tech: ["Flutter", "Provider", "Hive"],
-        githubUrl: "#",
-    },
+
 ];
 
 
 export const allProjects: Project[] = [
     ...featuredProjects,
+
+    {
+        title: "Blog App",
+        description: "A simple blog app to share your thoughts.",
+        tech: ["React naive", "Expo", "Firestore", "Redux"],
+        githubUrl: "https://github.com/ajay020/rnblogapp",
+    },
+    {
+        title: "Todo",
+        description: `Reactjs, HTML, CSS`,
+        liveUrl: "https://todo-app-opal-seven.vercel.app/",
+        githubUrl: "https://github.com/ajay020/todo-app",
+        tech: ["Reactjs", "HTML", "CSS"],
+    },
+
     {
         title: "Word Search Game",
-        description:
-            "A word search puzzle game with dynamic grid sizing and sound effects.",
+        description: "A word search puzzle game.",
         tech: ["Android", "Jetpack Compose", "MVVM"],
-        githubUrl: "#",
+        githubUrl: "https://github.com/ajay020/word-search-game",
     },
-    {
-        title: "English & Math Puzzle App",
-        description:
-            "Puzzle app with multiple puzzle types using Bloc state management.",
-        tech: ["Flutter", "Bloc"],
-        githubUrl: "#",
-    },
+
 ];

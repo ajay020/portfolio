@@ -2,8 +2,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with Ajay for opportunities and collaborations.",
+    title: "Contact",
+    description: "Get in touch with Ajay for opportunities and collaborations.",
 };
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
                     </a>
                 </p>
 
-                <p>
+                {/* <p>
                     💼 LinkedIn:{" "}
                     <a
                         href="https://linkedin.com/in/your-profile"
@@ -36,7 +36,7 @@ export default function ContactPage() {
                     >
                         linkedin.com/in/your-profile
                     </a>
-                </p>
+                </p> */}
 
                 <p>
                     💻 GitHub:{" "}
