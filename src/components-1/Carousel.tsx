@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
 import styles from "../styles/carousel.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface CarouselProps {
   images: string[];
@@ -30,7 +27,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         disabled={currentIndex === 0}
         className={`${styles.btn} text-xl p-2 hover:text-blue-600 transition`}
       >
-        <FontAwesomeIcon icon={faChevronLeft} />
+        {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
       </button>
 
       <div className="flex gap-2">
@@ -51,7 +48,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         disabled={currentIndex + 3 >= images.length}
         className={`${styles.btn} text-xl p-2 hover:text-blue-600 transition`}
       >
-        <FontAwesomeIcon icon={faChevronRight} />
+        {/* <FontAwesomeIcon icon={faChevronRight} /> */}
       </button>
     </div>
   );
